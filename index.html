@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="icon.gif">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switchcase</title>
+</head>
+<body>
+    <h1>Signos do Zodiaco</h1>
+  <main>
+    <div class="container1">
+    
+
+<span class="escolha">Escolha o Signo</span>
+  
+<input type="search" list="list" placeholder="Escolha o Signo..." id="signos">
+
+<datalist id="list">
+  <option value="Áries"> </option> 
+  <option value="Touro"> </option> 
+  <option value="Gêmeos"> </option> 
+  <option value="Câncer"> </option> 
+  <option value="Leão"> </option> 
+  <option value="Virgem"> </option> 
+  <option value="Libra"> </option> 
+  <option value="Escorpião"> </option>
+  <option value="Sagitário"> </option>
+  <option value="Capricórnio"> </option>
+  <option value="Aquário"> </option>
+  <option value="Peixes"> </option>
+
+</datalist>
+   
+<button onclick="escolhaSigno()"> Buscar </button>
+
+    <div id="frase"> Invencíveis desde eras mitológicas, eles trajam as 12 Armaduras de Ouro, correspondentes às constelações do zodíaco. Os Cavaleiros de Ouro têm dominado o Sétimo Sentido, a essência do Cosmo, que lhes concede capacidades milagrosas, entre elas a capacidade de atingir a velocidade da luz. Eles continuam a ser renovados, mesmo quando a deusa Atena não está presente na Terra.</div>
+
+</div>
+<div class="container2">
+    <div id="imagem"> <img src="img/vazio.jpg" alt="vazio"></div>
+</div>
+</main>
+
+    <script> function escolhaSigno() {
+        var texto 
+        var img
+        var signo = document.getElementById("signos").value;
+        
+        switch(signo){
+            case "Áries":
+                texto = "Áries é o primeiro signo astrológico do zodíaco, situado entre Peixes e Touro e associado à constelação de Aries. Seu símbolo é um carneiro. Forma com Leão e Sagitário a triplicidade dos signos do Fogo. É também um dos quatro cardinais, juntamente com Câncer, Libra e Capricórnio. Com pequenas variações nas datas dependendo do ano, os arianos são as pessoas nascidas entre 21 de março e 20 de abril...<br>  <p> Golpe Assinatura da constelação: </p> <span> Revolução Estelar! </span>";
+                img = '<img src="img/shion.jpg">'
+                break
+
+            case "Touro":
+                texto = "Touro é o segundo signo astrológico do zodíaco, situado entre Áries e Gêmeos e associado à constelação de Taurus. Seu símbolo é um boi. Forma com Virgem e Capricórnio a triplicidade dos signos da Terra. É também um dos quatro signos fixos, juntamente com Leão, Escorpião e Aquário. Com pequenas variações nas datas dependendo do ano, os taurinos são as pessoas nascidas entre 21 de Abril e 20 de Maio. Osíris era um deus da vegetação do Egito e aparecia com uma cabeça de touro. No Egito, quando o touro sagrado morria, colocavam-lhe um disco de ouro entre os chifres (símbolo do sol, a força da vida) e era pranteado e mumificado...<br> <p> Golpe Assinatura da constelação: </p> <span> Grande Chifre! </span>"
+                img = '<img src="img/debas.jpg">'
+                break
+            
+            case "Gêmeos":
+                texto = "Gêmeos é o terceiro signo astrológico do zodíaco, situado entre Touro e Câncer e associado à constelação de Gemini. Seu símbolo são os irmãos gêmeos. Forma com Libra e Aquário a triplicidade dos signos do Ar. É também um dos quatro signos mutáveis, juntamente com Virgem, Sagitário e Peixes. Com pequenas variações nas datas dependendo do ano, os geminianos são as pessoas nascidas entre 21 de Maio e 20 de Junho... dependendo do ano, os arianos são as pessoas nascidas entre 21 de março e 20 de abril...<br> <p> Golpe Assinatura da constelação: </p> <span> Explosão Galática!</span>"
+                img = '<img src="img/deuteros.jpg">'
+                break
+
+            case "Câncer":
+                texto = "Câncer é o quarto signo astrológico do zodíaco, situado entre Gêmeos e Leão e associado à constelação de Cancer. Seu símbolo é um caranguejo. Forma com Escorpião e Peixes a triplicidade dos signos da Água. É também um dos quatro cardinais, juntamente com Áries, Libra e Capricórnio. Com pequenas variações nas datas dependendo do ano, os cancerianos são as pessoas nascidas entre 21 de Junho e 22 de Julho...<br> <p> Golpe Assinatura da constelação: </p> <span> Ondas do Inferno!</span>"
+                img = '<img src="img/manogold.jpg">'
+                break
+            
+            case "Leão":
+                texto = "Leão é o quinto signo astrológico do zodíaco, situado entre Câncer e Virgem e associado à constelação de Leo. Seu símbolo é um leão. Forma com Áries e Sagitário a triplicidade dos signos do Fogo. É também um dos quatro signos fixos, juntamente com Touro, Escorpião e Aquário. Com pequenas variações nas datas dependendo do ano, os leoninos são as pessoas nascidas entre 22 de Julho e 22 de Agosto...<br> <p> Golpe Assinatura da constelação: </p> <span> Relâmpago de Plasma!</span>"
+                img = '<img src="img/regulus.jpg">'
+                break
+
+            case "Virgem":
+                texto = "Virgem é o sexto signo astrológico do zodíaco, situado entre Leão e Libra e associado à constelação de Virgo. Seu símbolo é uma virgem. Forma com Touro e Capricórnio a triplicidade dos signos da Terra. É também um dos quatro signos mutáveis, juntamente com Gêmeos, Sagitário e Peixes. Com pequenas variações nas datas dependendo do ano, os virginianos são as pessoas nascidas entre 23 de agosto e 22 de setembro...<br> <p> Golpe Assinatura da constelação: </p> <span> Tesouro do Céu!</span>"
+                img = '<img src="img/shaka.jpg">'
+                break
+            
+            case "Libra":
+                texto = "Libra é o sétimo signo astrológico do zodíaco, situado entre Virgem e Escorpião e associado à constelação de Libra. Seu símbolo é uma balança. Forma com Gêmeos e Aquário a triplicidade dos signos do Ar. É também um dos quatro signos cardinais, juntamente com Áries, Câncer e Capricórnio. Com pequenas variações nas datas dependendo do ano, os librianos são as pessoas nascidas entre 23 de setembro e 22 de outubro...<br> <p> Golpe Assinatura da constelação: </p> <span> Coléra dos Cem Dragões!</span>"
+                img = '<img src="img/dohko.jpg">'
+                break
+
+            case "Escorpião":
+                texto = "Escorpião é o oitavo signo astrológico do zodíaco, situado entre Libra e Sagitário e associado à constelação de Scorpius. Seu símbolo é o escorpião. Forma com Câncer e Peixes a triplicidade dos signos de Água. É também um dos quatro signos fixos, juntamente com Touro, Leão e Aquário. Com pequenas variações nas datas dependendo do ano, os escorpianos são as pessoas nascidas entre 23 de outubro e 22 de novembro...<br> <p> Golpe Assinatura da constelação: </p> <span> Agulha Escarlate!</span>"
+                img = '<img src="img/kardia.jpg">'
+                break
+            
+            case "Sagitário":
+                texto = "Sagitário é o nono signo astrológico do zodíaco, situado entre Escorpião e Capricórnio e associado à constelação de Sagittarius. Seu símbolo é o centauro. Forma com Áries e Leão a triplicidade dos signos do Fogo. É também um dos quatro signos mutáveis, juntamente com Gêmeos, Virgem e Peixes. Com pequenas variações nas datas dependendo do ano, os sagitarianos são as pessoas nascidas entre 22 de novembro e 21 de dezembro...<br> <p> Golpe Assinatura da constelação: </p> <span> Trovão Atômico!</span>"
+                img = '<img src="img/sisifo.jpg">'
+                break
+
+            case "Capricórnio":
+                texto = "Capricórnio é o décimo signo astrológico do zodíaco, situado entre Sagitário e Aquário e associado à constelação de Capricornus. Seu símbolo é um bode. Forma com Touro e Virgem a triplicidade dos signos da Terra. É também um dos quatro signos cardinais, juntamente com Áries, Câncer e Libra. Com pequenas variações nas datas dependendo do ano, os capricornianos são as pessoas nascidas entre 22 de dezembro e 20 de janeiro...<br> <p> Golpe Assinatura da constelação: </p> <span> Excalibur!</span>"
+                img = '<img src="img/shura.jpg">'
+                break
+            
+            case "Aquário":
+                texto = "Aquário é o décimo primeiro signo astrológico do zodíaco, situado entre Capricórnio e Peixes e associado à constelação de Aquarius. Seu símbolo é o aguadeiro. Forma com Gêmeos e Libra a triplicidade dos signos do Ar. É também um dos quatro signos fixos, juntamente com Touro, Leão e Escorpião. Com pequenas variações nas datas dependendo do ano, os aquarianos são as pessoas nascidas entre 21 de janeiro e 19 de fevereiro...<br> <p> Golpe Assinatura da constelação: </p> <span> Execução Aurora</span>"
+                img = '<img src="img/degel.jpg">'
+                break
+           
+            case "Peixes":
+                texto = "Peixes é o décimo segundo, e último signo astrológico do zodíaco, situado entre Aquário e associado à constelação de Pisces. Seu símbolo são dois peixes. Forma com Câncer e Escorpião a triplicidade dos signos da Água. É também um dos quatro signos mutáveis, juntamente com Gêmeos, Virgem e Sagitário. Com pequenas variações nas datas dependendo do ano, os piscianos são as pessoas nascidas entre 19 de Fevereiro e 20 de Março...<br> <p> Golpe Assinatura da constelação: </p> <span> Rosas Diabólicas Reais!</span>"
+                img = '<img src="img/albafica.jpg">'
+                break
+
+            default: 
+                texto = "Insira um Signo dentre os 12 clássicos!";
+                img = '<img src="img/vazio.jpg" alt="vazio">'
+                
+        }
+        document.getElementById("frase").innerHTML = texto 
+        document.getElementById("imagem").innerHTML = img 
+    }
+    </script>
+
+
+<footer>
+    <img src="icon.gif" alt="iconfoot"> <p>
+    Site desenvolvido por Rafael Freitas | Saint Seiya: Os Cavaleiros do Zodiaco &#169 é propriedade de Masami Kurumada todos os direitos reservados a Toei Animation, Shueisa e  Akita Shouten.</p>
+    <img src="icon.gif" alt="iconfoot"> 
+    </footer>
+
+</body>
+</html>
